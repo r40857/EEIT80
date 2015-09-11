@@ -21,24 +21,24 @@
 		
 		<!-- 以下的<global-results>與<global-exception-mappings>適用於此package內所有action,
 				在執行中如果出現Exception時會導向根目錄的error.jsp,然後由 error.jsp顯示500堆疊,此設定可有可無,不一定要設 -->	
-		<global-results>
-			<result name="error">/error.jsp</result>
-		</global-results>
-		<global-exception-mappings>
-			<exception-mapping exception="java.lang.Exception" result="error" />
-		</global-exception-mappings>
+<!-- 		<global-results> -->
+<!-- 			<result name="error">/error.jsp</result> -->
+<!-- 		</global-results> -->
+<!-- 		<global-exception-mappings> -->
+<!-- 			<exception-mapping exception="java.lang.Exception" result="error" /> -->
+<!-- 		</global-exception-mappings> -->
 		
 		<!--1.用 <action>來告知 Struts2 我們有一個業務邏輯單元Action class可以讓外界存取 -->
 		<!--2.name="myAction"是用來設定讓外界呼叫的名稱 -->
 		<!--3.class則是告訴 Struts2 我們的 Action class 是哪個,class的值一定要是完整的名稱 -->
-		<action name="myAction" class="com.action.HelloAction">
+<!-- 		<action name="myAction" class="com.action.HelloAction"> -->
 
 			<!--1.每一個Action可以配置多個<result>,每一個<result>可以指定一個view,譬如/hello.jsp -->
 			<!--2.name="success",譬如我們在 Action的 execute() method 中回傳一個 "success" 
 					的字串,Struts2 就會到此處找尋是否有符合的 <result name="success"> 可以對應 -->
 			<!--3.name="success"是預設,可省略 -->
-			<result name="success">/hello.jsp</result>
-		</action>
+<!-- 			<result name="success">/hello.jsp</result> -->
+<!-- 		</action> -->
 		
 	</package>
 </struts>
